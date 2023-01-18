@@ -52,12 +52,6 @@ class CardnewsDIO extends HTMLElement {
   styles() {
     const style = document.createElement('style')
     style.textContent = `
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-      }
       .container {
         padding: 2rem;
         width: 100vw;

@@ -40,8 +40,7 @@ class CardNewsPro extends HTMLElement {
     cardRight.setAttribute('class', 'cardRight')
     const img = document.createElement('img')
     img.src =
-      this.getAttribute('photo') ||
-      './assets/images/armadura-darth-vader-1920x1024.jpg'
+      this.getAttribute('photo') || './assets/images/default_picture.PNG'
     img.alt = this.getAttribute('alt') || 'alternative text for image'
     cardRight.appendChild(img)
 
@@ -57,12 +56,6 @@ class CardNewsPro extends HTMLElement {
   styles() {
     const style = document.createElement('style')
     style.textContent = `
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-      }
       .container {
         padding: 2rem;
         width: 100vw;
