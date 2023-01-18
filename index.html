@@ -12,6 +12,9 @@
     <!-- Components -->
     <script src="./src/components/cardNews.js" defer></script>
     <script src="./src/components/dinamicTitle.js" defer></script>
+    <script src="./src/components/dinamicDiv.js" defer></script>
+    <script src="./src/components/cardNewsPro.js" defer></script>
+    <script src="./src/components/CardNewsDIO.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -33,7 +36,29 @@
       </div>
     </div>
 
-    <card-news></card-news>
-    <dinamic-title></dinamic-title>
+    <card-news> </card-news>
+
+    <dinamic-title title="dinamic title"></dinamic-title>
+
+    <dinamic-div title="dinamic div"></dinamic-div>
+
+    <card-news-pro
+      author="Filipe Zeferino"
+      title="Darth Vader Hires DEVs"
+      news-content="Darth Vader is looking for web-developers that know how to work with components."
+      link-url="www.google.com"
+      photo="./assets/images/armadura-darth-vader-1920x1024.jpg"
+      alt="Darth Vader Image"
+    >
+    </card-news-pro>
+
+    <card-news-dio
+      author="Filipe Zeferino"
+      title="Darth Vader Contrata"
+      link-url="www.google.com"
+      photo="./assets/images/armadura-darth-vader-1920x1024.jpg"
+      content="Darth Vader procura desenvolvedores que sabem trabalhar com componentes."
+    >
+    </card-news-dio>
   </body>
 </html>
